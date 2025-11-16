@@ -1,0 +1,21 @@
+{
+    "nama_sekolah": "SMA Merdeka",
+    "siswa": [
+        {
+            "nama": "Ali",
+            "kelas": "XI-A",
+            "nilai": 85
+        },
+        {
+            "nama": "Budi",
+            "kelas": "XI-B",
+            "nilai": 78
+        },
+        {
+            "nama": "Citra",
+            "kelas": "XI-A",
+            "nilai": 92
+        }
+    ],
+    "jumlah_siswa": 3
+}

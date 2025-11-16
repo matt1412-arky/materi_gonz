@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "tanggal": "2025-09-29 09:00:12",
+        "judul": "Test",
+        "isi": "Abc"
+    },
+    {
+        "id": 2,
+        "tanggal": "2025-09-29 09:01:07",
+        "judul": "A",
+        "isi": "bca"
+    },
+    {
+        "id": 3,
+        "tanggal": "2025-09-29 09:04:40",
+        "judul": "Aku",
+        "isi": "aku"
+    },
+    {
+        "id": 4,
+        "tanggal": "2025-09-29 09:05:29",
+        "judul": "Today",
+        "isi": "aku seorang nelayan"
+    }
+]

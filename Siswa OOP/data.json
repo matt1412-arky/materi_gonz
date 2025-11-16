@@ -1,0 +1,40 @@
+{
+    "siswa": [
+        {
+            "nama": "Adit",
+            "kelas": "XII-P2"
+        },
+        {
+            "nama": "Ika",
+            "kelas": "XI-P7"
+        }
+    ],
+    "guru": [
+        {
+            "nama": "Budi",
+            "mapel": "Informatika"
+        }
+    ],
+    "mapel": [
+        {
+            "nama": "Matematika",
+            "kode": "MTK"
+        },
+        {
+            "nama": "Informatika",
+            "kode": "IF"
+        }
+    ],
+    "nilai": [
+        {
+            "siswa": "Adit",
+            "mapel": "Informatika",
+            "nilai": 85.0
+        },
+        {
+            "siswa": "Ika",
+            "mapel": "Matematika",
+            "nilai": 90.0
+        }
+    ]
+}
