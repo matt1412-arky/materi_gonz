@@ -6,7 +6,7 @@ class Kalkulator:
         self.window = window
         self.window.title("Kalkulator Sederhana")
         self.window.geometry("400x400")
-        self.window.configure(bg="#f0f0f0")
+        self.window.configure(bg="#000000")
         
         # Judul
         judul = tk.Label(window, text="🧮 KALKULATOR", 
