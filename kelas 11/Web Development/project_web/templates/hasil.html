@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Hasil Input</title>
+    <style>
+      body {
+        font-family: Arial;
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+      }
+      .result-box {
+        background: #e8f5e9;
+        padding: 20px;
+        border-radius: 10px;
+        border-left: 4px solid #4caf50;
+      }
+      a {
+        display: inline-block;
+        margin-top: 20px;
+        color: #667eea;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>✅ Data Berhasil Disimpan!</h1>
+
+    <div class="result-box">
+      <h3>Data yang Anda Masukkan:</h3>
+      <p><strong>Nama:</strong> {{ nama }}</p>
+      <p><strong>Kelas:</strong> {{ kelas }}</p>
+      <p><strong>Email:</strong> {{ email }}</p>
+      <p><strong>Hobi:</strong> {{ hobi }}</p>
+    </div>
+
+    <a href="/form">← Kembali ke Form</a>
+  </body>
+</html>
