@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Data Siswa</title>
+    <style>
+      body {
+        font-family: Arial;
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #f5f5f5;
+      }
+      h1 {
+        color: #667eea;
+        text-align: center;
+      }
+      .btn-tambah {
+        background: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+      table {
+        width: 100%;
+        background: white;
+        border-collapse: collapse;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      th,
+      td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background: #667eea;
+        color: white;
+      }
+      .btn-hapus {
+        background: #f44336;
+        color: white;
+        padding: 5px 15px;
+        text-decoration: none;
+        border-radius: 3px;
+        font-size: 14px;
+      }
+      .empty-message {
+        text-align: center;
+        padding: 50px;
+        color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>📚 Data Siswa</h1>
+
+    <a href="/tambah" class="btn-tambah">➕ Tambah Siswa</a>
+
+    {% if siswa %}
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>Kelas</th>
+          <th>Email</th>
+          <th>Hobi</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for s in siswa %}
+        <tr>
+          <td>{{ loop.index }}</td>
+          <td>{{ s.nama }}</td>
+          <td>{{ s.kelas }}</td>
+          <td>{{ s.email }}</td>
+          <td>{{ s.hobi }}</td>
+          <td>
+            <a
+              href="/hapus/{{ s.id }}"
+              class="btn-hapus"
+              onclick="return confirm('Yakin ingin menghapus?');"
+              >Hapus</a
+            >
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+    <div class="empty-message">
+      <p>Belum ada data siswa. Silakan tambah data baru.</p>
+    </div>
+    {% endif %}
+  </body>
+</html>

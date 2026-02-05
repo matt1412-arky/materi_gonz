@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Form Biodata</title>
+    <style>
+      body {
+        font-family: Arial;
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background: #f4f4f4;
+      }
+      .form-container {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      input,
+      select {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      button {
+        background: #667eea;
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        background: #5568d3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>📝 Form Biodata Siswa</h1>
+
+      <form action="/tambah" method="POST">
+        <label>Nama Lengkap:</label>
+        <input type="text" name="nama" required />
+
+        <label>Kelas:</label>
+        <select name="kelas" required>
+          <option value="">Pilih Kelas</option>
+          <option value="X-A">X-A</option>
+          <option value="X-B">X-B</option>
+          <option value="XI-A">XI-A</option>
+          <option value="XI-B">XI-B</option>
+          <option value="XII-A">XII-A</option>
+          <option value="XII-B">XII-B</option>
+        </select>
+
+        <label>Email:</label>
+        <input type="email" name="email" required />
+
+        <label>Hobi:</label>
+        <input type="text" name="hobi" placeholder="Coding, Gaming, dll" />
+
+        <button type="submit">Kirim</button>
+      </form>
+    </div>
+  </body>
+</html>
