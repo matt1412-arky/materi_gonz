@@ -48,7 +48,7 @@ def send_email(sender_email, sender_password, recipient_email, subject, body, at
 # Cara pakai
 if __name__ == "__main__":
     sender = "matthew.christian@gonzaga.sch.id"
-    password = "aigm lulb hogh wvmu"  # Gunakan App Password, bukan password biasa!
+    password = "zhov ittk ckep taxk"  # Gunakan App Password, bukan password biasa!
     recipient = "38.jose.madur@gonzaga.sch.id"
     
     subject = "Materi Hari Ini"
